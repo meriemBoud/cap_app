@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="241dp"
+    android:visibility="visible"
+    tools:context=".inscrirePourConducteur">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linlay1"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Prenom:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:id="@+id/txtv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay3"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°Téléphone:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay4"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay5"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay6"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie de permis:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay7"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mot de pass:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/e7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:inputType="number|textPassword|textWebPassword"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e7"
+            android:layout_marginStart="222dp"
+            android:layout_marginLeft="222dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/btn_bakground"
+            android:enabled="false"
+            android:text="Login"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

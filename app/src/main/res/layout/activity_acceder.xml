@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccederActivity">
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="236dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="78dp"
+        android:src="@drawable/m1" />
+
+    <Button
+        android:id="@+id/buttoninscrire"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_bakground"
+        android:enabled="true"
+        android:text="inscrire"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttoncon"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttoninscrire"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_bakground"
+        android:enabled="true"
+        android:text="connecter"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="208dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:autoSizeMaxTextSize="@android:dimen/dialog_min_width_major"
+        android:text="Welcom to Cap"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+</RelativeLayout>
